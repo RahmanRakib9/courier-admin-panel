@@ -1,0 +1,26 @@
+.sidebar-container {
+     display: flex;
+     /* justify-content: center; */
+     flex-direction: column;
+     align-items: center;
+     min-height: 100vh;
+     width: 300px;
+     background: #000;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+     .sidebar-container {
+          width: 100%;
+     }
+}
+
+
+
+.navigate-link {
+     padding-top: 50%;
+}
+
+.sidebar-elements {
+     margin-top: 10%;
+}
