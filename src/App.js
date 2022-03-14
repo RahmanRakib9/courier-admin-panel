@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Home from './components/Home/Home/Home';
 import Landing from './components/Home/Landing/Landing';
+import AddService from './components/Home/AddService/AddService';
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <Routes>
         <Route path='' element={<Landing />} />
         <Route path='/home' element={<Landing />} />
+        <Route path='/addService' element={<AddService/>} />
       </Routes>
     </BrowserRouter>
   );

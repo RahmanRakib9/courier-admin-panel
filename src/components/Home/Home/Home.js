@@ -1,12 +1,14 @@
-import React from 'react';
-import AddService from '../AddService/AddService';
+// import React from 'react';
+// import { Link } from 'react-router-dom';
 
-const Home = () => {
-     return (
-          <div>
-               <AddService />
-          </div>
-     );
-};
+// const Home = () => {
+//      return (
+//           <div>
+//                <Link to='/'>Home</Link>
+//                <Link to='/addService'>Add Service</Link>
+//                <Link to='/edit'>Edit</Link>
+//           </div>
+//      );
+// };
 
-export default Home;
+// export default Home;

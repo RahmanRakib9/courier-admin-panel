@@ -1,8 +1,8 @@
 .sidebar-container {
-     display: flex;
+     /* display: flex; */
      /* justify-content: center; */
-     flex-direction: column;
-     align-items: center;
+     /* flex-direction: column;
+     align-items: center; */
      min-height: 100vh;
      width: 300px;
      background: #000;
@@ -18,9 +18,13 @@
 
 
 .navigate-link {
-     padding-top: 50%;
+     padding-top: 15%;
 }
 
 .sidebar-elements {
-     margin-top: 10%;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     /* margin-top: 10%; */
 }

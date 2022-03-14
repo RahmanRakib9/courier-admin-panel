@@ -1,0 +1,9 @@
+.navigate-link-container {
+     display: flex;
+     justify-content: space-evenly;
+     
+}
+
+.navigate-links {
+     /* margin: 50px 0; */
+}

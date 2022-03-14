@@ -6,19 +6,19 @@ const Sidebar = () => {
      return (
           <div className='sidebar-container'>
                <div className='sidebar-elements'>
-                    <h2>Signed in as</h2>
-                    <ul>
-                         <Link to='/home' className='navigate-link'>Home</Link>
-                    </ul>
-                    <ul>
-                         <Link to='/addService' className='navigate-link'>Add Service</Link>
-                    </ul>
-                    <ul>
-                         <Link to='/edit' className='navigate-link'>Edit Service</Link>
-                    </ul>
-                    <ul>
-                         <button>Log out</button>
-                    </ul>
+                    <h2 className='mt-5'>Signed in as</h2>
+
+                    <Link to='/home' className='navigate-link'>Home</Link>
+
+
+                    <Link to='/addService' className='navigate-link'>Add Service</Link>
+
+
+                    <Link to='/edit' className='navigate-link'>Edit Service</Link>
+
+
+                    <button style={{ marginTop: "15%" }}>Log out</button>
+
                </div>
           </div>
      );
