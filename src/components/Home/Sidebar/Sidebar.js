@@ -10,12 +10,11 @@ const Sidebar = () => {
 
                     <Link to='/home' className='navigate-link'>Home</Link>
 
-
                     <Link to='/addService' className='navigate-link'>Add Service</Link>
 
+                    <Link to='/proceedEdit' className='navigate-link'>Edit Service</Link>
 
-                    <Link to='/edit' className='navigate-link'>Edit Service</Link>
-
+                    <Link to='/updatePrice' className='navigate-link'>Update Price</Link>
 
                     <button style={{ marginTop: "15%" }}>Log out</button>
 
