@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const ProceedEdit = () => {
      const [proceedEdit, setProceedEdit] = useState([]);
@@ -12,12 +13,16 @@ const ProceedEdit = () => {
                     setProceedEdit(data)
                     console.log(data);
                })
-     }, [])
+     }, []);
+
+     const navigate = useNavigate();
+     const handleNavigate = editId => {
+          navigate(`/edit/${editId}`)
+     }
 
      return (
           <div>
                <h1 style={{ textAlign: 'center' }}>Total Service: {proceedEdit.length}</h1>
-
                <Table striped bordered hover size="sm">
                     <thead>
                          <tr>
@@ -30,12 +35,11 @@ const ProceedEdit = () => {
                     <tbody>
                          {
                               proceedEdit.map(x =>
-
-                                   <tr>
+                                   <tr key={x._id}>
                                         <td>{rowCounter++}</td>
                                         <td>{x.name}</td>
                                         <td>{x.description}</td>
-                                        <td><button>Edit</button></td>
+                                        <td><button onClick={() => handleNavigate(x._id)}>Edit</button></td>
                                    </tr>
 
                               )
@@ -50,9 +54,7 @@ const ProceedEdit = () => {
 export default ProceedEdit;
 
 
-// {
-//      proceedEdit.map(x => <ProceedEditTable key={x._id} x={x}></ProceedEditTable>)
-// }
+
 
 
 
