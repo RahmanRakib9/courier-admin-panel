@@ -96,8 +96,3 @@ const Edit = () => {
 export default Edit;
 
 
-{/* <form onSubmit={handleUpdateService} className='editable-form'>
-<input type="text" value={edit.name || ''} />
-<textarea type="text" value={edit.description || ''} />
-<input type="submit" value="Submit" />
-</form> */}
